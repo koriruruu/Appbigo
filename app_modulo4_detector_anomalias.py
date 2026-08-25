@@ -116,6 +116,7 @@ with tab1:
 # ---------------------------------------------------------------------------
 # Tab 2: Notación Big-O
 # ---------------------------------------------------------------------------
+
 with tab2:
     st.subheader("¿Por qué importa la complejidad?")
     st.write(
@@ -136,6 +137,8 @@ with tab2:
         label="O(n log n)",
     )
     ax2.plot(n_valores, n_valores**2, label="O(n²) — cuadrática")
+    # Añadimos la función cúbica:
+    ax2.plot(n_valores, n_valores**3, label="O(n³) — cúbica")
 
     ax2.set_xlabel("Tamaño de los datos (n)")
     ax2.set_ylabel("Operaciones (teórico)")
